@@ -1,0 +1,16 @@
+# Base groups
+base
+base-devel
+
+# The kernel
+linux
+linux-firmware
+
+# Microcode for both AMD and intel
+intel-ucode
+amd-ucode
+
+# Needed for mkinitcpio
+mkinitcpio-nfs-utils
+nbd
+syslinux

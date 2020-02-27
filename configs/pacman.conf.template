@@ -1,0 +1,20 @@
+[options]
+Architecture = auto
+HoldPkg = pacman glibc linux linux-firmware
+IgnorePkg =
+IgnoreGroup =
+SigLevel = Required DatabaseOptional
+LocalFileSigLevel = Optional
+
+[core]
+Include = /etc/pacman.d/mirrorlist
+
+[extra]
+Include = /etc/pacman.d/mirrorlist
+
+[community]
+Include = /etc/pacman.d/mirrorlist
+
+[aur-local]
+SigLevel = Optional
+Server = file://$AUR_REPO_DIR
